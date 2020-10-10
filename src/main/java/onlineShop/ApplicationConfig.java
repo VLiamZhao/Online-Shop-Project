@@ -23,8 +23,7 @@ public class ApplicationConfig {
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        // 只需要修改红色部分, 保留其他内容
-        dataSource.setUrl("jdbc:mysql://database-2.cvcenbnuv6sy.us-east-1.rds.amazonaws.com:3306/mydb?createDatabaseIfNotExist=true&serverTimezone=UTC");
+        dataSource.setUrl("jdbc:mysql://database-1.cmevod2vpu03.us-east-2.rds.amazonaws.com:3306/ecommerce?createDatabaseIfNotExist=true&serverTimezone=UTC");
         dataSource.setUsername("admin");
         dataSource.setPassword("12345678");
 
